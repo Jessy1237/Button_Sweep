@@ -1,7 +1,7 @@
 #include <Servo.h>
-#define BUTTON_LEFT 2
+#define BUTTON_LEFT 2 //Upper Mono Port
 #define SERVO 9
-#define BUTTON_RIGHT 4
+#define BUTTON_RIGHT 4 //Lower Mono Port
 #define DELAY_MS 1000
 #define MAX_VALUE 90
 
@@ -30,13 +30,13 @@ void setup() {
 void loop() {
   //if (Serial.available() > 0)
   //{
-    //value = Serial.parseInt();
-    //Serial.print(value);
-    //Serial.print("\n");
+  //value = Serial.parseInt();
+  //Serial.print(value);
+  //Serial.print("\n");
 
-    //moveServo(value, prevValue);
+  //moveServo(value, prevValue);
 
-    //prevValue = value;
+  //prevValue = value;
   //}
 
   if (digitalRead(BUTTON_LEFT) == LOW && !leftHeld)
